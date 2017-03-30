@@ -1,0 +1,35 @@
+.btn-continue {
+  $size: 48px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  background-color: rgba(100, 100, 100, 0.7);
+  width: $size;
+  height: $size;
+  border-radius: $size / 2;
+
+  &:hover {
+    background-color: rgba(100, 100, 100, 1);
+  }
+
+  a {
+    width: $size;
+    height: $size;
+    line-height: $size;
+    display: block;
+    text-align: center;
+    margin-left: 2px; // Hacky fix to get it centered
+  }
+}
+
+.what-we-do {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .fa {
+    font-size: 64px;
+  }
+}

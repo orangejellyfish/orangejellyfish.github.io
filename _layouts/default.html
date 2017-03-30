@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>orangejellyfish</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="keywords" content="JavaScript, consultancy, London, web, development, agency, enterprise">
+    <meta name="description" content="orangejellyfish is a London-based consultancy with a passion for JavaScript">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | relative_url }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
+
+    <!--[if lt IE 10]>
+    <script src="{{ "/assets/scripts/html5shiv.min.js" | relative_url }}"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar-wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-inner">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1>
+              <a class="navbar-brand" href="#">
+                <img src="{{ "/assets/images/jellyfish.png" | relative_url }}"> orangejellyfish
+              </a>
+            </h1>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="https://github.com/orangejellyfish">See our code</a></li>
+              <li><a href="mailto:hello@orangejellyfish.com">Get in touch</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    {{content}}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93255256-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+// Variables.
+@import "intense/variables";
+@import "bootstrap/variables";
+
+$font-family-base: "Source Sans Pro", sans-serif;
+$font-size-h2: 64px;
+
+$color-orangejellyfish: #cc4d00;
+
+$btn-primary-bg: $color-orangejellyfish;
+$btn-primary-border: $color-orangejellyfish;
+$btn-default-border: $btn-default-bg;
+
+// Fonts.
+@font-face {
+  font-family: "Sofia Pro Soft";
+  src: url("/assets/fonts/sofia-pro-soft-regular.eot");
+  src: url("/assets/fonts/sofia-pro-soft-regular.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/sofia-pro-soft-regular.woff2") format("woff2"),
+       url("/assets/fonts/sofia-pro-soft-regular.woff") format("woff"),
+       url("/assets/fonts/sofia-pro-soft-regular.ttf") format("truetype"),
+       url("/assets/fonts/sofia-pro-soft-regular.svg#sofia-pro-soft-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/assets/fonts/fontawesome.eot");
+  src: url("/assets/fonts/fontawesome.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/fontawesome.woff2") format("woff2"),
+       url("/assets/fonts/fontawesome.woff") format("woff"),
+       url("/assets/fonts/fontawesome.ttf") format("truetype"),
+       url("/assets/fonts/fontawesome.svg#fontawesome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bootstrap framework
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+//@import "bootstrap/code";
+//@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/grid";
+
+// Bootstrap components
+@import "bootstrap/component-animations";
+//@import "bootstrap/dropdowns";
+//@import "bootstrap/button-groups";
+//@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+//@import "bootstrap/breadcrumbs";
+//@import "bootstrap/pagination";
+//@import "bootstrap/pager";
+//@import "bootstrap/labels";
+//@import "bootstrap/badges";
+@import "bootstrap/jumbotron";
+//@import "bootstrap/thumbnails";
+//@import "bootstrap/alerts";
+//@import "bootstrap/progress-bars";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/panels";
+//@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+//@import "bootstrap/close";
+
+// Bootstrap utilities
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+// Custom styles
+@import "orangejellyfish/base";
+@import "orangejellyfish/navbar";
+@import "orangejellyfish/jumbotron";
+@import "orangejellyfish/font-awesome";
+
+// Custom page styles
+@import "orangejellyfish/pages/home";

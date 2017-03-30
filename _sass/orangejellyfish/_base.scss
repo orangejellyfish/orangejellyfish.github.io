@@ -1,0 +1,50 @@
+html, body, .content {
+  height: 100%;
+}
+
+body {
+  background-color: #cc4d00;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  width: 20%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(
+    200deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  min-height: 100vh;
+  padding-top: 140px;
+}
