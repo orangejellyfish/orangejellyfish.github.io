@@ -1,0 +1,80 @@
+.blog {
+  .sidebar {
+    .section-title {
+      border-bottom: 1px solid $color-text-light;
+      padding-bottom: 18px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding-left: 15px;
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: $color-orangejellyfish;
+          left: 0;
+          top: 10px;
+        }
+
+        + li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .post-meta {
+    .glyphicon {
+      color: $color-orangejellyfish;
+    }
+  }
+
+  .post-author {
+    text-align: center;
+
+    img {
+      $avatar-size: 120px;
+
+      width: $avatar-size;
+      height: $avatar-size;
+      border-radius: $avatar-size / 2;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .post-tags {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow: auto;
+      float: right;
+
+      li {
+        float: left;
+
+        a:after {
+          content: ",\00a0"
+        }
+
+        &:last-child {
+          a:after {
+            content: ""
+          }
+        }
+      }
+    }
+  }
+}

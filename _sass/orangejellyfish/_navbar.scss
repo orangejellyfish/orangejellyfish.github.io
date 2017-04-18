@@ -1,5 +1,10 @@
 .navbar-wrapper {
   overflow: auto;
+
+  + .container {
+    margin-top: 140px;
+    padding-top: 30px;
+  }
 }
 
 .navbar {
@@ -9,6 +14,15 @@
   font-family: "Sofia Pro Soft", sans-serif;
   position: fixed;
   width: 100%;
+  z-index: 10000;
+
+  &.navbar-transparent {
+    background-color: transparent;
+  }
+
+  &.navbar-default {
+    background-color: $color_orangejellyfish;
+  }
 
   .navbar-header {
     min-height: 80px;
@@ -70,7 +84,7 @@
 
         &:hover {
           background-color: transparent;
-          color: inherit;
+          color: #fff;
 
           &:after {
             left: 0;

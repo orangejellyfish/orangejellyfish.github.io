@@ -3,19 +3,33 @@ html, body, .content {
 }
 
 body {
-  background-color: #cc4d00;
-  color: #fff;
+  background-color: #fff;
+  color: $color-text;
 }
 
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
   text-align: center;
 
   &:hover {
-    color: inherit;
+    color: $color-orangejellyfish;
     text-decoration: none;
   }
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+.text-light {
+  color: $color-text-light;
 }
 
 .logo {

@@ -6,6 +6,8 @@ $font-family-base: "Source Sans Pro", sans-serif;
 $font-size-h2: 64px;
 
 $color-orangejellyfish: #cc4d00;
+$color-text: #434345;
+$color-text-light: #9b9b9b;
 
 $btn-primary-bg: $color-orangejellyfish;
 $btn-primary-border: $color-orangejellyfish;
@@ -107,3 +109,4 @@ $btn-default-border: $btn-default-bg;
 
 // Custom page styles
 @import "orangejellyfish/pages/home";
+@import "orangejellyfish/pages/blog";

@@ -1,4 +1,5 @@
 title: orangejellyfish
+permalink: /blog/:title
 
 # Build settings
 markdown: kramdown
