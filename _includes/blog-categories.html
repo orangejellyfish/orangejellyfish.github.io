@@ -1,0 +1,25 @@
+<h4 class="section-title">Categories</h4>
+<ul>
+  {% assign raw_tags = "" %}
+  {% for post in site.posts %}
+    {% assign post_tags = post.tags | join:"|" | append:"|" %}
+    {% assign raw_tags = raw_tags | append:post_tags %}
+  {% endfor %}
+  {% assign raw_tags = raw_tags | split:"|" | sort %}
+
+  {% assign unique_tags = "" %}
+  {% for tag in raw_tags %}
+    {% if unique_tags == "" %}
+      {% assign unique_tags = tag | split:"|" %}
+    {% endif %}
+    {% unless unique_tags contains tag %}
+      {% assign unique_tags = unique_tags | join:"|" | append:"|" | append:tag | split:"|" %}
+    {% endunless %}
+  {% endfor %}
+
+  {% for tag in unique_tags %}
+  <li>
+    <a href="">{{ tag }}</a>
+  </li>
+  {% endfor %}
+</ul>
