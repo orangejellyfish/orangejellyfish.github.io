@@ -21,7 +21,7 @@
   </head>
   <body class="{{ page.page_class }}">
     <header class="navbar-wrapper">
-      <nav class="navbar navbar-default">
+      <nav class="navbar {% if layout.active == "home" %}navbar-transparent{% else %}navbar-default{% endif %}">
         <div class="container-fluid navbar-inner">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">

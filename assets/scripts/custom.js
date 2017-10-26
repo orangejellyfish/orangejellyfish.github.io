@@ -10,8 +10,4 @@ $(function () {
     typeSpeed: 100,
     backDelay: 1000,
   });
-
-  $('.home .navbar-wrapper .navbar')
-    .removeClass('navbar-default')
-    .addClass('navbar-transparent');
 });
