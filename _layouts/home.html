@@ -2,31 +2,28 @@
 layout: default
 active: home
 ---
-<div class="jumbotron-video-wrapper">
-  <div class="jumbotron-video-overlay"></div>
-  <video poster="{{ "/assets/images/cap.png" | relative_url }}" playsinline autoplay muted loop class="jumbotron-video">
-    <source src="{{ "/assets/images/jellyfish.mp4" | relative_url }}" type="video/mp4">
-    <source src="{{ "/assets/images/jellyfish.webm" | relative_url }}" type="video/webm">
-  </video>
-</div>
 <div class="section">
+  <div class="jumbotron-video-wrapper">
+    <div class="jumbotron-video-overlay"></div>
+    <video poster="{{ "/assets/images/cap.png" | relative_url }}" playsinline autoplay muted loop class="jumbotron-video">
+      <source src="{{ "/assets/images/jellyfish.mp4" | relative_url }}" type="video/mp4">
+      <source src="{{ "/assets/images/jellyfish.webm" | relative_url }}" type="video/webm">
+    </video>
+  </div>
   <div class="jumbotron">
     <div class="container">
       <h2 class="ticker-text">We build things <span id="build-message">better.</span></h2>
-      <p>
+      <p class="lead">
         orangejellyfish is a London-based consultancy with a passion for JavaScript, open source software and the cloud. We take great pride in what we build and maintain and we'd love to show you what we can do.
       </p>
-        <div class="row">
-          <div class="col-sm-offset-3 col-sm-6">
-            <div class="row">
-              <div class="col-sm-6">
-                <a href="https://github.com/orangejellyfish" class="btn btn-primary btn-lg">See our code</a>
-              </div>
-              <div class="col-sm-6">
-                <a href="mailto:hello@orangejellyfish.com" class="btn btn-default btn-lg">Get in touch</a>
-            </div>
-          </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-md-3">
+          <a href="https://github.com/orangejellyfish" class="btn btn-primary btn-lg btn-block">See our code</a>
         </div>
+        <div class="col col-md-3">
+          <a href="mailto:hello@orangejellyfish.com" class="btn btn-light btn-lg btn-block">Get in touch</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

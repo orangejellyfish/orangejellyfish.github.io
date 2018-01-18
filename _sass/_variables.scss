@@ -1,0 +1,25 @@
+// Fonts.
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+
+// Colours.
+$color-orangejellyfish: #cc4d00;
+$primary: $color-orangejellyfish;
+
+// Inputs and buttons.
+$input-btn-padding-y-lg: .75rem;
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+$lead-font-size: $font-size-base * 1.5;
+
+$jumbotron-bg: transparent;
+
+$navbar-padding-x: 85px;
+$navbar-padding-y: 40px;
+$navbar-light-color: #fff;
+$navbar-light-color: #fff;
+$navbar-light-hover-color: #fff;
+$navbar-light-active-color: #fff;
+$navbar-brand-font-size: $h2-font-size;
+$navbar-light-toggler-icon-bg: $navbar-dark-toggler-icon-bg;
