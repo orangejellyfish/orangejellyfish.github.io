@@ -5,12 +5,12 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
     <meta name="keywords" content="JavaScript, consultancy, London, web, development, agency, enterprise">
     <meta name="description" content="orangejellyfish is a London-based consultancy with a passion for JavaScript">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
+    <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relative_url }}">
     <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | relative_url }}" sizes="16x16">
     <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
@@ -20,35 +20,12 @@
     <![endif]-->
   </head>
   <body class="{{ page.page_class }}">
-    <header class="navbar-wrapper">
-      <nav class="navbar {% if layout.active == "home" %}navbar-transparent{% else %}navbar-default{% endif %}">
-        <div class="container-fluid navbar-inner">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <h1>
-              <a class="navbar-brand" href="/">
-                <img src="{{ "/assets/images/jellyfish.png" | relative_url }}"> orangejellyfish
-              </a>
-            </h1>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li {% if layout.active == "home" %} class="active" {% endif %} ><a href="/">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="https://blog.orangejellyfish.com">Blog</a></li>
-              <li><a href="https://github.com/orangejellyfish">See our code</a></li>
-              <li><a href="mailto:hello@orangejellyfish.com">Get in touch</a></li>
-          </div>
-        </div>
-      </nav>
-    </header>
+    {% if layout.active != "home" %}
+      {% include nav.html %}
+    {% endif %}
     {{content}}
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.6/typed.min.js"></script>
     <script src="{{ "/assets/scripts/custom.js" | relative_url }}"></script>
     <script>

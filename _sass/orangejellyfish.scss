@@ -1,16 +1,3 @@
-// Variables.
-@import "intense/variables";
-@import "bootstrap/variables";
-
-$font-family-base: "Source Sans Pro", sans-serif;
-$color-orangejellyfish: #cc4d00;
-$color-text: #434345;
-$color-text-light: #9b9b9b;
-
-$btn-primary-bg: $color-orangejellyfish;
-$btn-primary-border: $color-orangejellyfish;
-$btn-default-border: $btn-default-bg;
-
 // Fonts.
 @font-face {
   font-family: "Sofia Pro Soft";
@@ -36,75 +23,25 @@ $btn-default-border: $btn-default-bg;
   font-style: normal;
 }
 
-// Typed.js
-.typed-cursor{
-	opacity: 1;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
-}
-@keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-@-moz-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
+// Configure Bootstrap.
+@import "variables";
+@import "bootstrap/bootstrap";
 
-// Bootstrap framework
-@import "bootstrap/mixins";
-@import "bootstrap/normalize";
-@import "bootstrap/print";
-@import "bootstrap/glyphicons";
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-//@import "bootstrap/code";
-//@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
-@import "bootstrap/grid";
-
-// Bootstrap components
-@import "bootstrap/component-animations";
-//@import "bootstrap/dropdowns";
-//@import "bootstrap/button-groups";
-//@import "bootstrap/input-groups";
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
-//@import "bootstrap/breadcrumbs";
-//@import "bootstrap/pagination";
-//@import "bootstrap/pager";
-//@import "bootstrap/labels";
-//@import "bootstrap/badges";
-@import "bootstrap/jumbotron";
-//@import "bootstrap/thumbnails";
-//@import "bootstrap/alerts";
-//@import "bootstrap/progress-bars";
-//@import "bootstrap/media";
-//@import "bootstrap/list-group";
-//@import "bootstrap/panels";
-//@import "bootstrap/responsive-embed";
-//@import "bootstrap/wells";
-//@import "bootstrap/close";
-
-// Bootstrap utilities
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
-
-// Custom styles
-@import "orangejellyfish/base";
-@import "orangejellyfish/navbar";
+// Custom Bootstrap overrides.
 @import "orangejellyfish/jumbotron";
-@import "orangejellyfish/font-awesome";
+@import "orangejellyfish/navbar";
+@import "orangejellyfish/buttons";
 
-// Custom page styles
+// Page-specific styles.
 @import "orangejellyfish/pages/home";
-@import "orangejellyfish/pages/blog";
+
+// Global styles.
+html {
+  height: 100%;
+}
+
+body {
+  @include media-breakpoint-up(md) {
+    height: 100%;
+  }
+}
