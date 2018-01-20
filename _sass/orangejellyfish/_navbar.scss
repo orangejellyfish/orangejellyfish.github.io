@@ -2,6 +2,34 @@
   font-family: "Sofia Pro Soft", sans-serif;
 }
 
+.navbar-brand {
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 1rem auto;
+
+    @include media-breakpoint-up(sm) {
+      display: inline;
+      margin: auto;
+    }
+  }
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+
+  @include media-breakpoint-up(sm) {
+    position: initial;
+  }
+}
+
 .navbar-nav {
   $nav-link-border: 4px solid $color-orangejellyfish;
 

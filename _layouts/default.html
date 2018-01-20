@@ -20,31 +20,9 @@
     <![endif]-->
   </head>
   <body class="{{ page.page_class }}">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="{{ "/assets/images/jellyfish.png" | relative_url }}" alt="Logo" width="60" height="60">
-        orangejellyfish
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item {% if layout.active == "home" %}active{% endif %}">
-            <a href="/" class="nav-link">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="https://blog.orangejellyfish.com" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/orangejellyfish" class="nav-link">See our code</a>
-          </li>
-          <li class="nav-item">
-            <a href="mailto:hello@orangejellyfish.com" class="nav-link">Get in touch</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    {% if layout.active != "home" %}
+      {% include nav.html %}
+    {% endif %}
     {{content}}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
