@@ -1,6 +1,9 @@
 // Fonts.
 $font-family-sans-serif: "Source Sans Pro", sans-serif;
 
+// Type.
+$h3-font-size: 2.5rem;
+
 // Colours.
 $color-orangejellyfish: #cc4d00;
 $primary: $color-orangejellyfish;
@@ -23,3 +26,6 @@ $navbar-light-hover-color: #fff;
 $navbar-light-active-color: #fff;
 $navbar-brand-font-size: $h2-font-size;
 $navbar-light-toggler-icon-bg: $navbar-dark-toggler-icon-bg;
+
+$hr-border-color: $color-orangejellyfish;
+$hr-border-width: 8px;

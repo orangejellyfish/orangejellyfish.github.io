@@ -1,6 +1,9 @@
 title: orangejellyfish
 permalink: /blog/:title
 
+collections:
+ - team
+
 # Build settings
 markdown: kramdown
 exclude:

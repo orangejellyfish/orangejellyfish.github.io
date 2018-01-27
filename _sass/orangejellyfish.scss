@@ -28,6 +28,7 @@
 @import "bootstrap/bootstrap";
 
 // Custom Bootstrap overrides.
+@import "orangejellyfish/type";
 @import "orangejellyfish/jumbotron";
 @import "orangejellyfish/navbar";
 @import "orangejellyfish/buttons";
@@ -43,5 +44,27 @@ html {
 body {
   @include media-breakpoint-up(md) {
     height: 100%;
+  }
+}
+
+hr {
+  width: 50px;
+  margin-bottom: 2em;
+}
+
+.section {
+  padding: $navbar-padding-y $navbar-padding-x;
+}
+
+.page-footer {
+  background-color: #191919;
+  color: #fff;
+  padding: $navbar-padding-y $navbar-padding-x;
+
+  @include media-breakpoint-down(xs) {
+    .copyright {
+      text-align: center;
+      padding-top: 1em;
+    }
   }
 }

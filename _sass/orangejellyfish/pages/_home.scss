@@ -8,6 +8,7 @@ body.home {
   min-height: 100vh;
   height: 100%;
   overflow: auto;
+  padding: 0 !important;
 }
 
 .ticker-text {
@@ -19,5 +20,16 @@ body.home {
   .ticker-text {
     font-size:2.5rem;
     min-height:8rem;
+  }
+}
+
+.team-member {
+  .photo {
+    $photo-diameter: 175px;
+
+    width: $photo-diameter;
+    border-radius: $photo-diameter / 2;
+    display: block;
+    margin-bottom: 1em;
   }
 }
