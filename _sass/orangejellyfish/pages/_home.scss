@@ -33,3 +33,35 @@ body.home {
     margin-bottom: 1em;
   }
 }
+
+.section-tech {
+  background-image: url(/assets/images/desk.jpg);
+  background-size: cover;
+  position: relative;
+  color: #fff;
+
+  &:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  > .container-fluid {
+    position: relative;
+    z-index: 1;
+  }
+
+  .tech-logo {
+    $logo-diameter: 175px;
+
+    background-color: #eee;
+    border-radius: 50%;
+    width: $logo-diameter;
+    height: $logo-diameter;
+    margin: 0 auto;
+  }
+}

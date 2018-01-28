@@ -31,15 +31,15 @@ active: home
 <div class="section section-team">
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center flex-column">
-      <h3>Our team</h3>
+      <h3 class="text-center">Our team</h3>
       <hr>
     </div>
     <div class="row">
       {% for member in site.team %}
         <div class="col d-flex flex-column align-items-center team-member">
           <img src="{{ member.image }}" alt="{{ member.name }}" class="photo">
-          <h4>{{ member.name }}</h4>
-          <h5>{{ member.role }}</h5>
+          <h4 class="text-center">{{ member.name }}</h4>
+          <h5 class="text-center">{{ member.role }}</h5>
         </div>
       {% endfor %}
       <div class="col d-flex flex-column align-items-center team-member">
@@ -49,6 +49,23 @@ active: home
           <a href="mailto:hello@orangejellyfish.com">We're hiring!</a>
         </h5>
       </div>
+    </div>
+  </div>
+</div>
+<div class="section section-tech">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center flex-column">
+      <h3 class="text-center">Tech we enjoy</h3>
+      <hr>
+    </div>
+    <div class="row">
+      {% for tech in site.tech %}
+        <div class="col">
+          <div class="tech-logo d-flex justify-content-center align-items-center">
+            <img src="{{ tech.logo | relative_url }}" alt="{{ tech.name }}" width="{{ tech.logo_width }}" height="{{ tech.logo_width }}">
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>

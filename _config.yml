@@ -3,6 +3,7 @@ permalink: /blog/:title
 
 collections:
  - team
+ - tech
 
 # Build settings
 markdown: kramdown
