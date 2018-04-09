@@ -6,8 +6,8 @@ collections:
   - name: "team"
     label: "team"
     folder: "/_team"
+    extension: "yml"
     create: true
-    extension: "md"
     fields:
         - {label: "Name", name: "name", widget: "string"}
         - {label: "Image", name: "image", widget: "string"}
