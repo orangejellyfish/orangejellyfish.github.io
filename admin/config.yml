@@ -2,3 +2,13 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: assets
+collections:
+  - name: "team"
+    label: "team"
+    folder: "/_team"
+    create: true
+    extension: "md"
+    fields:
+        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Image", name: "image", widget: "string"}
+        - {label: "Role", name: "role", widget: "string"}
