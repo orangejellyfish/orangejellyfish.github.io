@@ -6,7 +6,8 @@ collections:
   - name: "team"
     label: "team"
     folder: "/_team"
-    extension: "yml"
+    extension: yml
+    format: frontmatter
     create: true
     fields:
         - {label: "Name", name: "name", widget: "string"}
