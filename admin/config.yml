@@ -21,6 +21,6 @@ collections:
     format: frontmatter
     create: true
     fields:
-        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Technology", name: "title", widget: "string"}
         - {label: "Logo", name: "logo", widget: "image"}
         - {label: "Logo Width", name: "logo_width", widget: "number"}
