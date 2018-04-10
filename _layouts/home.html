@@ -37,8 +37,8 @@ active: home
     <div class="row">
       {% for member in site.team %}
         <div class="col d-flex flex-column align-items-center team-member">
-          <img src="{{ member.image }}" alt="{{ member.name }}" class="photo">
-          <h4 class="text-center">{{ member.name }}</h4>
+          <img src="{{ member.image }}" alt="{{ member.title }}" class="photo">
+          <h4 class="text-center">{{ member.title }}</h4>
           <h5 class="text-center">{{ member.role }}</h5>
         </div>
       {% endfor %}
