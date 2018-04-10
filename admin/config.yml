@@ -11,7 +11,7 @@ collections:
     format: frontmatter
     create: true
     fields:
-        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Name", name: "title", widget: "string"}
         - {label: "Gravatar URL", name: "image", widget: "string"}
         - {label: "Role", name: "role", widget: "string"}
   - name: "tech"
