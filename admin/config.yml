@@ -1,17 +1,26 @@
 backend:
   name: git-gateway
   branch: add-netlify-cms # Branch to update (optional; defaults to master)
-media_folder: assets
+media_folder: "assets/media"
+publish_mode: editorial_workflow
 collections:
   - name: "team"
-    label: "team"
+    label: "Team Members"
     folder: "/_team"
     extension: yml
     format: frontmatter
     create: true
     fields:
         - {label: "Name", name: "name", widget: "string"}
-        - {label: "Image", name: "image", widget: "string"}
+        - {label: "Gravatar URL", name: "image", widget: "string"}
         - {label: "Role", name: "role", widget: "string"}
-        - {label: "Body", name: "body", widget: "markdown"}
-
+  - name: "tech"
+    label: "Technologies"
+    folder: "/_tech"
+    extension: yml
+    format: frontmatter
+    create: true
+    fields:
+        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Logo", name: "logo", widget: "image"}
+        - {label: "Logo Width", name: "logo_width", widget: "string", pattern: ['/([0-9])+px?/g', 'Must specify a width with px']}

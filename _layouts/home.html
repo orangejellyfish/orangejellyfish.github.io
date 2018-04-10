@@ -6,9 +6,9 @@ active: home
   {% include nav.html %}
   <div class="jumbotron-video-wrapper">
     <div class="jumbotron-video-overlay"></div>
-    <video poster="{{ "/assets/images/cap.png" | relative_url }}" playsinline autoplay muted loop class="jumbotron-video">
-      <source src="{{ "/assets/images/jellyfish.mp4" | relative_url }}" type="video/mp4">
-      <source src="{{ "/assets/images/jellyfish.webm" | relative_url }}" type="video/webm">
+    <video poster="{{ "/assets/media/cap.png" | relative_url }}" playsinline autoplay muted loop class="jumbotron-video">
+      <source src="{{ "/assets/media/jellyfish.mp4" | relative_url }}" type="video/mp4">
+      <source src="{{ "/assets/media/jellyfish.webm" | relative_url }}" type="video/webm">
     </video>
   </div>
   <div class="jumbotron">
@@ -43,7 +43,7 @@ active: home
         </div>
       {% endfor %}
       <div class="col d-flex flex-column align-items-center team-member">
-        <img src="{{ "/assets/images/silhouette.jpg" | relative_url }}" alt="Silhouette" class="photo">
+        <img src="{{ "/assets/media/silhouette.jpg" | relative_url }}" alt="Silhouette" class="photo">
         <h4>You?</h4>
         <h5>
           <a href="mailto:hello@orangejellyfish.com">We're hiring!</a>
@@ -62,7 +62,7 @@ active: home
       {% for tech in site.tech %}
         <div class="col">
           <div class="tech-logo d-flex justify-content-center align-items-center">
-            <img src="{{ tech.logo | relative_url }}" alt="{{ tech.name }}" width="{{ tech.logo_width }}" height="{{ tech.logo_width }}">
+            <img src="{{ tech.logo | relative_url }}" alt="{{ tech.name }}" width="{{ tech.logo_width }}px" height="{{ tech.logo_width }}">
           </div>
         </div>
       {% endfor %}
