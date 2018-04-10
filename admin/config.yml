@@ -23,4 +23,4 @@ collections:
     fields:
         - {label: "Name", name: "name", widget: "string"}
         - {label: "Logo", name: "logo", widget: "image"}
-        - {label: "Logo Width", name: "logo_width", widget: "string"}
+        - {label: "Logo Width", name: "logo_width", widget: "number"}

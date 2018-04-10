@@ -62,7 +62,7 @@ active: home
       {% for tech in site.tech %}
         <div class="col">
           <div class="tech-logo d-flex justify-content-center align-items-center">
-            <img src="{{ tech.logo | relative_url }}" alt="{{ tech.name }}" width="{{ tech.logo_width }}" height="{{ tech.logo_width }}">
+            <img src="{{ tech.logo | relative_url }}" alt="{{ tech.name }}" width="{{ tech.logo_width }}px" height="{{ tech.logo_width }}px">
           </div>
         </div>
       {% endfor %}
